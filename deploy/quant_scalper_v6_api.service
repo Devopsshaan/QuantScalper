@@ -1,0 +1,13 @@
+[Unit]
+Description=Quant Scalper v6 API
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/quant_scalper_v6
+ExecStart=/bin/bash /home/ubuntu/quant_scalper_v6/run_api.sh
+Restart=always
+RestartSec=5
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target

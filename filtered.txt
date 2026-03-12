@@ -1,0 +1,127 @@
+2026-03-11 23:46:18 | qs.risk      | INFO  | Kelly sizing: p=0.63 rr=1.4 kelly_f=0.3726 risk%=0.0500 quality=0.63 size=$1900
+
+2026-03-11 23:46:18 | qs.order     | INFO  | RISK_REJECT AVAX/USDT SHORT size=$1900.00 price=9.69 | {"reason": "asset_exposure 950.0% > 35%"}
+
+2026-03-11 23:46:57 | qs.risk      | INFO  | Kelly sizing: p=0.57 rr=1.4 kelly_f=0.2644 risk%=0.0500 quality=0.57 size=$1900
+
+2026-03-11 23:46:57 | qs.order     | INFO  | RISK_REJECT SOL/USDT SHORT size=$1900.00 price=87.24 | {"reason": "asset_exposure 950.0% > 35%"}
+
+2026-03-11 23:46:58 | qs.risk      | INFO  | Kelly sizing: p=0.63 rr=1.4 kelly_f=0.3645 risk%=0.0500 quality=0.63 size=$1900
+
+2026-03-11 23:46:58 | qs.order     | INFO  | RISK_REJECT XRP/USDT SHORT size=$1900.00 price=1.39 | {"reason": "asset_exposure 950.0% > 35%"}
+
+2026-03-11 23:48:54 | qs.risk      | INFO  | Kelly sizing: p=0.62 rr=1.4 kelly_f=0.3419 risk%=0.0500 quality=0.62 size=$1900
+
+2026-03-11 23:48:54 | qs.order     | INFO  | RISK_REJECT AVAX/USDT SHORT size=$1900.00 price=9.69 | {"reason": "asset_exposure 950.0% > 35%"}
+
+2026-03-11 23:49:32 | qs.risk      | INFO  | Kelly sizing: p=0.66 rr=1.4 kelly_f=0.4091 risk%=0.0500 quality=0.66 size=$1900
+
+2026-03-11 23:49:32 | qs.order     | INFO  | RISK_REJECT AVAX/USDT SHORT size=$1900.00 price=9.69 | {"reason": "asset_exposure 950.0% > 35%"}
+
+2026-03-11 23:50:48 | qs.risk      | INFO  | Kelly sizing: p=0.65 rr=1.4 kelly_f=0.3918 risk%=0.0500 quality=0.65 size=$1900
+
+2026-03-11 23:50:48 | qs.order     | INFO  | RISK_REJECT ADA/USDT SHORT size=$1900.00 price=0.27 | {"reason": "asset_exposure 950.0% > 35%"}
+
+2026-03-11 23:54:28 | qs.risk      | INFO  | Kelly sizing: p=0.59 rr=1.4 kelly_f=0.2951 risk%=0.0500 quality=0.59 size=$1900
+
+2026-03-11 23:54:28 | qs.order     | INFO  | RISK_REJECT ADA/USDT SHORT size=$1900.00 price=0.27 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:55:06 | qs.risk      | INFO  | Kelly sizing: p=0.58 rr=1.4 kelly_f=0.2826 risk%=0.0500 quality=0.58 size=$1900
+
+2026-03-11 23:55:07 | qs.order     | INFO  | RISK_REJECT ADA/USDT SHORT size=$1900.00 price=0.27 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:55:43 | qs.risk      | INFO  | Kelly sizing: p=0.59 rr=1.4 kelly_f=0.3038 risk%=0.0500 quality=0.59 size=$1900
+
+2026-03-11 23:55:43 | qs.order     | INFO  | RISK_REJECT AVAX/USDT SHORT size=$1900.00 price=9.70 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:56:19 | qs.risk      | INFO  | Kelly sizing: p=0.60 rr=1.4 kelly_f=0.3119 risk%=0.0500 quality=0.60 size=$1900
+
+2026-03-11 23:56:19 | qs.order     | INFO  | RISK_REJECT AVAX/USDT SHORT size=$1900.00 price=9.70 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:56:55 | qs.risk      | INFO  | Kelly sizing: p=0.68 rr=1.4 kelly_f=0.4432 risk%=0.0500 quality=0.68 size=$1900
+
+2026-03-11 23:56:55 | qs.order     | INFO  | RISK_REJECT AVAX/USDT SHORT size=$1900.00 price=9.69 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:56:56 | qs.risk      | INFO  | Kelly sizing: p=0.65 rr=1.4 kelly_f=0.4072 risk%=0.0500 quality=0.65 size=$1900
+
+2026-03-11 23:56:56 | qs.order     | INFO  | RISK_REJECT SOL/USDT SHORT size=$1900.00 price=87.06 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:57:35 | qs.risk      | INFO  | Kelly sizing: p=0.62 rr=1.4 kelly_f=0.3501 risk%=0.0500 quality=0.62 size=$1900
+
+2026-03-11 23:57:35 | qs.order     | INFO  | RISK_REJECT SOL/USDT SHORT size=$1900.00 price=87.05 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:58:10 | qs.risk      | INFO  | Kelly sizing: p=0.70 rr=1.4 kelly_f=0.4787 risk%=0.0500 quality=0.70 size=$1900
+
+2026-03-11 23:58:10 | qs.order     | INFO  | RISK_REJECT AVAX/USDT SHORT size=$1900.00 price=9.70 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:58:49 | qs.risk      | INFO  | Kelly sizing: p=0.65 rr=1.4 kelly_f=0.3947 risk%=0.0500 quality=0.65 size=$1900
+
+2026-03-11 23:58:49 | qs.order     | INFO  | RISK_REJECT ADA/USDT SHORT size=$1900.00 price=0.27 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:59:25 | qs.risk      | INFO  | Kelly sizing: p=0.66 rr=1.4 kelly_f=0.4235 risk%=0.0500 quality=0.66 size=$1900
+
+2026-03-11 23:59:25 | qs.order     | INFO  | RISK_REJECT AVAX/USDT SHORT size=$1900.00 price=9.69 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-11 23:59:26 | qs.risk      | INFO  | Kelly sizing: p=0.65 rr=1.4 kelly_f=0.4051 risk%=0.0500 quality=0.65 size=$1900
+
+2026-03-11 23:59:26 | qs.order     | INFO  | RISK_REJECT ADA/USDT SHORT size=$1900.00 price=0.27 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-12 00:00:04 | qs.risk      | INFO  | Kelly sizing: p=0.62 rr=1.4 kelly_f=0.3405 risk%=0.0500 quality=0.62 size=$1900
+
+2026-03-12 00:00:04 | qs.order     | INFO  | RISK_REJECT SOL/USDT LONG size=$1900.00 price=87.25 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-12 00:00:05 | qs.risk      | INFO  | Kelly sizing: p=0.65 rr=1.4 kelly_f=0.4010 risk%=0.0500 quality=0.65 size=$1900
+
+2026-03-12 00:00:05 | qs.order     | INFO  | RISK_REJECT ADA/USDT SHORT size=$1900.00 price=0.27 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-12 00:00:42 | qs.risk      | INFO  | Kelly sizing: p=0.65 rr=1.4 kelly_f=0.3964 risk%=0.0500 quality=0.65 size=$1900
+
+2026-03-12 00:00:42 | qs.order     | INFO  | RISK_REJECT SOL/USDT SHORT size=$1900.00 price=87.14 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-12 00:00:43 | qs.risk      | INFO  | Kelly sizing: p=0.67 rr=1.4 kelly_f=0.4379 risk%=0.0500 quality=0.67 size=$1900
+
+2026-03-12 00:00:43 | qs.order     | INFO  | RISK_REJECT AVAX/USDT SHORT size=$1900.00 price=9.69 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-12 00:01:19 | qs.risk      | INFO  | Kelly sizing: p=0.58 rr=1.4 kelly_f=0.2841 risk%=0.0500 quality=0.58 size=$1900
+
+2026-03-12 00:01:19 | qs.order     | INFO  | RISK_REJECT ETH/USDT SHORT size=$1900.00 price=2071.32 | {"reason": "asset_exposure 95.0% > 35%"}
+
+2026-03-12 00:02:55 | qs.risk      | INFO  | Kelly sizing: p=0.60 rr=1.4 kelly_f=0.3210 risk%=0.0500 quality=0.60 size=$1900
+
+2026-03-12 00:03:30 | qs.risk      | INFO  | Kelly sizing: p=0.56 rr=1.4 kelly_f=0.2454 risk%=0.0500 quality=0.56 size=$1900
+
+2026-03-12 00:04:05 | qs.risk      | INFO  | Kelly sizing: p=0.62 rr=1.4 kelly_f=0.3515 risk%=0.0500 quality=0.62 size=$1900
+
+2026-03-12 00:04:05 | qs.order     | INFO  | PAPER_FILL XRP/USDT SHORT size=$1900.00 price=1.39 | {"slippage_bps": 2.0, "grade": "C"}
+
+2026-03-12 00:04:05 | qs.vote      | INFO  | [TRADE] XRP/USDT SHORT | confidence=0.622 | risk_pct=1.2% | size=$1900 | TP=1.38 SL=1.39 | RR=1.4 | vote_conf=0.40
+
+2026-03-12 00:04:05 | qs.system    | INFO  | ENTRY XRP/USDT SHORT grade=C quality=0.622 size=$1900 vote_conf=0.40
+
+2026-03-12 00:10:18 | qs.risk      | INFO  | Kelly sizing: p=0.59 rr=1.4 kelly_f=0.2980 risk%=0.0500 quality=0.59 size=$1864
+
+2026-03-12 00:10:53 | qs.risk      | INFO  | Kelly sizing: p=0.59 rr=1.4 kelly_f=0.2953 risk%=0.0500 quality=0.59 size=$1864
+
+2026-03-12 00:13:13 | qs.risk      | INFO  | Kelly sizing: p=0.59 rr=1.4 kelly_f=0.2913 risk%=0.0500 quality=0.59 size=$1864
+
+2026-03-12 00:13:47 | qs.risk      | INFO  | Kelly sizing: p=0.59 rr=1.4 kelly_f=0.2961 risk%=0.0500 quality=0.59 size=$1864
+
+2026-03-12 00:14:22 | qs.risk      | INFO  | Kelly sizing: p=0.59 rr=1.4 kelly_f=0.3011 risk%=0.0500 quality=0.59 size=$1864
+
+2026-03-12 00:14:56 | qs.risk      | INFO  | Kelly sizing: p=0.59 rr=1.4 kelly_f=0.2970 risk%=0.0500 quality=0.59 size=$1864
+
+2026-03-12 00:14:56 | qs.risk      | INFO  | Kelly sizing: p=0.65 rr=1.4 kelly_f=0.4009 risk%=0.0500 quality=0.65 size=$1864
+
+2026-03-12 00:14:56 | qs.order     | INFO  | PAPER_FILL SOL/USDT SHORT size=$1863.84 price=87.08 | {"slippage_bps": 2.0, "grade": "C"}
+
+2026-03-12 00:14:56 | qs.vote      | INFO  | [TRADE] SOL/USDT SHORT | confidence=0.650 | risk_pct=1.8% | size=$1864 | TP=86.98 SL=87.23 | RR=1.4 | vote_conf=0.40
+
+2026-03-12 00:14:56 | qs.system    | INFO  | ENTRY SOL/USDT SHORT grade=C quality=0.650 size=$1864 vote_conf=0.40
+
+2026-03-12 00:26:13 | qs.risk      | INFO  | Kelly sizing: p=0.62 rr=1.4 kelly_f=0.3458 risk%=0.0500 quality=0.62 size=$1900
+
+2026-03-12 00:26:13 | qs.order     | INFO  | PAPER_FILL XRP/USDT SHORT size=$1900.00 price=1.39 | {"slippage_bps": 2.0, "grade": "C"}
+
+2026-03-12 00:26:13 | qs.vote      | INFO  | [TRADE] XRP/USDT SHORT | confidence=0.618 | risk_pct=1.2% | size=$1900 | TP=1.39 SL=1.39 | RR=1.4 | vote_conf=0.40
+
+2026-03-12 00:26:13 | qs.system    | INFO  | ENTRY XRP/USDT SHORT grade=C quality=0.618 size=$1900 vote_conf=0.40

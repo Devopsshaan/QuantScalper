@@ -1,0 +1,12 @@
+[Unit] 
+Description=Quant Scalper v6 paper bot 
+After=network.target 
+ 
+[Service] 
+WorkingDirectory=/home/ubuntu/quant_scalper_v6 
+ExecStart=/bin/bash /home/ubuntu/quant_scalper_v6/run_bot.sh 
+Restart=always 
+User=ubuntu 
+ 
+[Install] 
+WantedBy=multi-user.target

@@ -1,0 +1,30 @@
+{
+  "mode": "paper",
+  "initial_balance": 200,
+  "leverage": 10,
+  "risk_per_trade_pct": 0.02,
+  "max_daily_loss_pct": 0.06,
+  "circuit_breaker_losses": 3,
+  "circuit_breaker_cooldown_cycles": 15,
+  "interval_seconds": 30,
+  "daily_profit_target": 25.0,
+  "min_trade_grade": "C",
+  "allow_quiet_regime_c_trades": true,
+  "signal_quality_threshold": 0.5,
+  "max_open_positions": 2,
+  "max_asset_exposure_pct": 0.95,
+  "max_total_leverage": 20,
+  "max_drawdown_pct": 15,
+  "max_daily_loss": 12,
+  "max_consecutive_losses": 5,
+  "max_trades_per_hour": 6,
+  "scalp_mode": true,
+  "active_symbols": [
+    "BTC/USDT",
+    "ETH/USDT",
+    "SOL/USDT",
+    "BNB/USDT",
+    "DOGE/USDT",
+    "XRP/USDT"
+  ]
+}
