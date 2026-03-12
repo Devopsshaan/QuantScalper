@@ -37,7 +37,7 @@ class SignalQualityFilter:
         'volatility':   0.20,
     }
 
-    def __init__(self, threshold: float = 0.45):
+    def __init__(self, threshold: float = 0.60):
         self.threshold = threshold
         self.last_result: dict = {}
 
@@ -170,7 +170,7 @@ class SignalQualityFilter:
         return self.last_result
 
 
-def regrade(quality: dict, threshold: float = 0.50) -> dict:
+def regrade(quality: dict, threshold: float = 0.60) -> dict:
     """
     Re-assign grade after external score modifications (boosts).
     

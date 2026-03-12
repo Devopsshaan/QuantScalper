@@ -1,9 +1,14 @@
 import pandas as pd 
  
 class LiquiditySweepScalp: 
-    def detect(self, df): 
+    def detect(self, df, regime_str: str = "QUIET"): 
         if df is None or len(df) < 25: 
-            return {'signal': None, 'confidence': 0.0, 'reason': 'insufficient_data'} 
+            return {'signal': None, 'confidence': 0.0, 'reason': 'insufficient_data'}
+            
+        # Do not counter-trade a strong trend
+        if regime_str in ['TRENDING_UP', 'TRENDING_DOWN']:
+            return {'signal': None, 'confidence': 0.0, 'reason': 'regime_is_trending'}
+
         latest = df.iloc[-1] 
         prev = df.iloc[-2] 
         volume_avg = float(df['volume'].tail(20).mean()) 

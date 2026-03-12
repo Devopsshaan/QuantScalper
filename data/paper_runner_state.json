@@ -1,137 +1,152 @@
 {
-  "status": "running",
+  "status": "stopped",
   "error_message": "",
-  "timestamp": 1773315142.367447,
-  "results_count": 68,
+  "timestamp": 1773331706.853701,
+  "results_count": 20,
   "latest_result": {
-    "cycle": 68,
+    "cycle": 20,
     "prices": {
-      "BTC/USDT": 70482.0,
-      "ETH/USDT": 2068.99,
-      "SOL/USDT": 86.8
+      "BTC/USDT": 70099.1,
+      "ETH/USDT": 2063.3,
+      "SOL/USDT": 86.24
     },
-    "active_symbol": null,
+    "active_symbol": "BTC/USDT",
     "state": {
-      "balance": 198.7197,
+      "balance": 199.8003,
       "leverage": 10,
-      "position": null,
-      "positions": {},
-      "unrealized_pnl": 0,
-      "equity": 198.7197,
-      "roi_pct": -0.64,
-      "trade_count": 3,
+      "position": "LONG",
+      "positions": {
+        "BTC/USDT": {
+          "side": "LONG",
+          "entry": 70116.62477500002,
+          "size_usd": 499.5,
+          "pnl": 0.0,
+          "tp": 70379.50000000003,
+          "sl": 69958.9,
+          "grade": "C"
+        }
+      },
+      "unrealized_pnl": 0.0,
+      "equity": 199.8003,
+      "roi_pct": -0.1,
+      "trade_count": 18,
       "win_rate": 66.7,
       "initial_balance": 200,
       "consecutive_losses": 0,
       "cooldown_remaining": 0,
-      "daily_pnl": -1.28,
+      "daily_pnl": -0.2,
       "daily_halted": false,
       "stats": {
-        "total_trades": 3,
-        "wins": 2,
-        "losses": 1,
+        "total_trades": 18,
+        "wins": 12,
+        "losses": 6,
         "win_rate": 66.7,
-        "profit_factor": 2.26,
-        "avg_win": 1.76,
-        "avg_loss": -1.56,
-        "max_drawdown": 0.77,
-        "total_pnl": 1.96,
-        "sharpe": 0.27,
-        "sortino": 0.27,
-        "calmar": 1.279,
-        "expectancy": 0.65,
-        "avg_hold_s": 531.0,
-        "best_trade": 3.24,
-        "worst_trade": -1.56,
+        "profit_factor": 0.99,
+        "avg_win": 1.88,
+        "avg_loss": -3.79,
+        "max_drawdown": 8.82,
+        "total_pnl": -0.2,
+        "sharpe": -0.003,
+        "sortino": -0.002,
+        "calmar": -0.011,
+        "expectancy": -0.01,
+        "avg_hold_s": 438.0,
+        "best_trade": 5.14,
+        "worst_trade": -11.24,
         "grade_breakdown": {
           "C": {
-            "count": 3,
-            "pnl": 1.9586999999999999,
-            "wins": 2
+            "count": 17,
+            "pnl": 0.9455999999999992,
+            "wins": 12
+          },
+          "B": {
+            "count": 1,
+            "pnl": -1.1453,
+            "wins": 0
           }
         }
       }
     },
     "indicators": {
       "BTC/USDT": {
-        "rsi": 55.5,
-        "atr": 59.01,
-        "vol_ratio": 0.18,
-        "price": 70482.0,
-        "trend_filter": "BULL",
-        "long_votes": 0,
-        "short_votes": 0,
+        "rsi": 40.8,
+        "atr": 112.82,
+        "vol_ratio": 1.6,
+        "price": 70099.1,
+        "trend_filter": "BEAR",
+        "long_votes": 1,
+        "short_votes": 3,
         "regime": "QUIET",
         "regime_confidence": 0.3,
         "atr_pct": 0,
-        "macd_diff": -3.2221,
-        "bb_width": 0.003,
-        "ema9": 70463.78,
-        "ema21": 70447.14,
-        "ema50": 70382.82,
-        "entropy": 0.8777,
-        "hurst": 0.672,
-        "signal": null
+        "macd_diff": -24.4059,
+        "bb_width": 0.0042,
+        "ema9": 70245.62,
+        "ema21": 70263.92,
+        "ema50": 70175.86,
+        "entropy": 0.8026,
+        "hurst": 0.7219,
+        "signal": "LONG"
       },
       "ETH/USDT": {
-        "rsi": 51.5,
-        "atr": 1.75,
-        "vol_ratio": 0.22,
-        "price": 2068.99,
-        "trend_filter": "BULL",
-        "long_votes": 0,
-        "short_votes": 0,
-        "regime": "QUIET",
-        "regime_confidence": 0.3,
-        "atr_pct": 0,
-        "macd_diff": -0.0569,
-        "bb_width": 0.0026,
-        "ema9": 2068.66,
-        "ema21": 2068.71,
-        "ema50": 2067.84,
-        "entropy": 0.7682,
-        "hurst": 0.6788,
+        "price": 2063.3,
         "signal": null
       },
       "SOL/USDT": {
-        "price": 86.8,
-        "signal": null
+        "rsi": 39.9,
+        "atr": 0.19,
+        "vol_ratio": 1.63,
+        "price": 86.24,
+        "trend_filter": "BEAR",
+        "long_votes": 0,
+        "short_votes": 3,
+        "regime": "QUIET",
+        "regime_confidence": 0.3,
+        "atr_pct": 0,
+        "macd_diff": -0.0393,
+        "bb_width": 0.0069,
+        "ema9": 86.53,
+        "ema21": 86.56,
+        "ema50": 86.41,
+        "entropy": 0.7609,
+        "hurst": 0.7216,
+        "signal": "SHORT"
       }
     },
     "rankings": [
       {
         "symbol": "SOL/USDT",
-        "volatility_score": 0.0994,
-        "atr_pct": 0.1035,
-        "volume_factor": 0.7389,
-        "price_move_pct": 0.023,
-        "price": 86.8,
-        "atr_trending": "True",
-        "spread_pct": 0.0461,
+        "volatility_score": 0.1335,
+        "atr_pct": 0.195,
+        "volume_factor": 0.6825,
+        "price_move_pct": 0.312,
+        "price": 86.88,
+        "atr_trending": "False",
+        "spread_pct": 0.1842,
         "tradeable": "True",
         "rank": 1
       },
       {
         "symbol": "BTC/USDT",
-        "volatility_score": 0.0952,
-        "atr_pct": 0.0851,
-        "volume_factor": 0.8605,
-        "price_move_pct": 0.019,
-        "price": 70457.4,
-        "atr_trending": "True",
-        "spread_pct": 0.0305,
+        "volatility_score": 0.1171,
+        "atr_pct": 0.146,
+        "volume_factor": 0.8007,
+        "price_move_pct": 0.205,
+        "price": 70446.1,
+        "atr_trending": "False",
+        "spread_pct": 0.1065,
         "tradeable": "True",
         "rank": 2
       },
       {
         "symbol": "ETH/USDT",
-        "volatility_score": 0.0729,
-        "atr_pct": 0.0856,
-        "volume_factor": 0.6551,
-        "price_move_pct": 0.035,
-        "price": 2068.16,
-        "atr_trending": "True",
-        "spread_pct": 0.0198,
+        "volatility_score": 0.1016,
+        "atr_pct": 0.169,
+        "volume_factor": 0.599,
+        "price_move_pct": 0.309,
+        "price": 2076.38,
+        "atr_trending": "False",
+        "spread_pct": 0.1604,
         "tradeable": "True",
         "rank": 3
       }
@@ -143,95 +158,56 @@
       "pause_remaining_s": 0,
       "last_alert": "",
       "last_alert_time": "",
-      "recent_headlines": [
-        {
-          "title": "BYDFi Perpetual Futures Data Now Live on TradingView",
-          "source": "investing_comcryptonews",
-          "time": "15:29",
-          "danger": false
-        },
-        {
-          "title": "Bitcoin trades rangebound at $70k as traders parse Iran conflict, in line CPI data",
-          "source": "investing_comcryptonews",
-          "time": "15:28",
-          "danger": false
-        },
-        {
-          "title": "Bybit EU Leads Paris Blockchain Week 2026 as Title Sponsor; CEO Ben Zhou to Take the Stage",
-          "source": "investing_comcryptonews",
-          "time": "15:26",
-          "danger": false
-        },
-        {
-          "title": "Oil Supply Shock Risk: The Critical Factor Supporting Dollar Strength in 2025",
-          "source": "bitcoinworld",
-          "time": "15:25",
-          "danger": false
-        },
-        {
-          "title": "Ontology\u2019s 2026 Roadmap Targets Universal Data Sovereignty and Human-Centric AI",
-          "source": "investing_comcryptonews",
-          "time": "15:25",
-          "danger": false
-        },
-        {
-          "title": "Crypto trading bot Banana Gun clears $8B in annualized volume",
-          "source": "investing_comcryptonews",
-          "time": "15:23",
-          "danger": false
-        },
-        {
-          "title": "Metaplanet Launches New Unit to Boost Bitcoin Ecosystem in Japan",
-          "source": "cointurken",
-          "time": "15:21",
-          "danger": false
-        },
-        {
-          "title": "Strategy Bitcoin Accumulation: The Audacious Financial Experiment Blending Crypto and Capital Market",
-          "source": "bitcoinworld",
-          "time": "15:20",
-          "danger": false
-        },
-        {
-          "title": "Bitcoin buyers \u2018in control\u2019 but trend won't change until this level breaks",
-          "source": "cointelegraph",
-          "time": "15:16",
-          "danger": false
-        },
-        {
-          "title": "Ripple Executive On Mastercard Deal 'Imperative to Demonstrate Enterprise Stability'",
-          "source": "utoday",
-          "time": "15:16",
-          "danger": false
-        }
-      ],
+      "recent_headlines": [],
       "paused_assets": {}
     },
-    "active_positions": {},
+    "active_positions": {
+      "BTC/USDT": {
+        "side": "LONG",
+        "entry": 70099.1,
+        "grade": "C",
+        "quality_score": 0.7242,
+        "conditions": {
+          "regime": "RANGING",
+          "entropy": 0.8026,
+          "hurst": 0.7219,
+          "atr_pct": 0.1609,
+          "vol_ratio": 1.6,
+          "rsi": 40.8,
+          "imbalance": 0.7822,
+          "hour_utc": 16,
+          "bb_width": 0.0042
+        },
+        "gate_confidence": 0.312,
+        "exploit_type": "TRENDING",
+        "rr_ratio": 1.8,
+        "ev": 144.0901
+      }
+    },
     "regimes": {
       "BTC/USDT": {
-        "regime": "TRENDING",
-        "bias": "UP",
-        "confidence": 0.809,
-        "adx": 33.37,
-        "bb_width": 0.003,
-        "atr_pct": 0.0837,
+        "regime": "RANGING",
+        "bias": "DOWN",
+        "confidence": 0.62,
+        "adx": 18.89,
+        "bb_width": 0.0042,
+        "atr_pct": 0.1609,
         "weights": {
-          "rr_ratio": 2.4,
-          "size_mult": 1.0,
+          "rr_ratio": 1.8,
+          "size_mult": 0.8,
           "min_votes": 2
         },
-        "rr_ratio": 2.4,
-        "size_mult": 1.0,
+        "rr_ratio": 1.8,
+        "size_mult": 0.8,
         "min_votes": 2
       },
       "ETH/USDT": {
         "regime": "RANGING",
-        "bias": "UP",
+        "bias": "DOWN",
         "confidence": 0.62,
-        "adx": 19.71,
-        "bb_width": 0.0026,
-        "atr_pct": 0.0847,
+        "adx": 17.24,
+        "bb_width": 0.0043,
+        "atr_pct": 0.1903,
         "weights": {
           "rr_ratio": 1.8,
           "size_mult": 0.8,
@@ -243,11 +219,11 @@
       },
       "SOL/USDT": {
         "regime": "RANGING",
-        "bias": "UP",
+        "bias": "DOWN",
         "confidence": 0.62,
-        "adx": 15.96,
-        "bb_width": 0.0041,
-        "atr_pct": 0.1001,
+        "adx": 13.54,
+        "bb_width": 0.0069,
+        "atr_pct": 0.2201,
         "weights": {
           "rr_ratio": 1.8,
           "size_mult": 0.8,
@@ -260,7 +236,7 @@
     },
     "confidence": {
       "BTC/USDT": {
-        "score": 0.7457,
+        "score": 0.7242,
         "grade": "C",
         "size_pct": 0.5,
         "passed": true,
@@ -268,64 +244,20 @@
         "breakdown": {
           "technical": 0.799,
           "ml_confidence": 0.5,
-          "order_flow": 0.902,
-          "volatility": 0.7
-        }
-      },
-      "ETH/USDT": {
-        "score": 0.6605,
-        "grade": "C",
-        "size_pct": 0.5,
-        "passed": true,
-        "reject_reason": "score 0.607 < threshold 0.65",
-        "breakdown": {
-          "technical": 0.799,
-          "ml_confidence": 0.5,
-          "order_flow": 0.461,
-          "volatility": 0.7
-        }
-      },
-      "SOL/USDT": {
-        "score": 0.6595,
-        "grade": "C",
-        "size_pct": 0.5,
-        "passed": true,
-        "reject_reason": "score 0.607 < threshold 0.65",
-        "breakdown": {
-          "technical": 0.799,
-          "ml_confidence": 0.5,
-          "order_flow": 0.459,
+          "order_flow": 0.891,
           "volatility": 0.7
         }
       }
     },
     "order_flow": {
       "BTC/USDT": {
-        "bid_volume": 7.234,
-        "ask_volume": 0.79,
-        "imbalance": 0.8031,
+        "bid_volume": 4.483,
+        "ask_volume": 0.548,
+        "imbalance": 0.7822,
         "pressure": "BUY",
-        "best_bid": 70405.9,
-        "best_ask": 70406.0,
+        "best_bid": 70099.1,
+        "best_ask": 70099.2,
         "spread_bps": 0.01
-      },
-      "ETH/USDT": {
-        "bid_volume": 92.532,
-        "ask_volume": 107.997,
-        "imbalance": -0.0771,
-        "pressure": "NEUTRAL",
-        "best_bid": 2067.62,
-        "best_ask": 2067.63,
-        "spread_bps": 0.05
-      },
-      "SOL/USDT": {
-        "bid_volume": 22996.77,
-        "ask_volume": 27160.31,
-        "imbalance": -0.083,
-        "pressure": "NEUTRAL",
-        "best_bid": 86.82,
-        "best_ask": 86.83,
-        "spread_bps": 1.15
       }
     },
     "ml": {
@@ -338,32 +270,32 @@
       "model_age_s": -1
     },
     "correlation": {
-      "bias": "RISK_ON",
-      "score": 1.0,
+      "bias": "RISK_OFF",
+      "score": -1.0,
       "confidence": 1.0,
       "markets": {
         "SP500": {
-          "direction": "UP",
-          "change": 0.232,
-          "price": 6774.76
+          "direction": "DOWN",
+          "change": -0.792,
+          "price": 6707.77
         },
         "DXY": {
-          "direction": "FLAT",
-          "change": -0.049,
-          "price": 99.31
+          "direction": "UP",
+          "change": 0.312,
+          "price": 99.64
         },
         "GOLD": {
           "direction": "DOWN",
-          "change": -0.125,
-          "price": 5181.9
+          "change": -0.908,
+          "price": 5137.7
         },
         "VIX": {
-          "direction": "DOWN",
-          "change": -5.111,
-          "price": 24.32
+          "direction": "UP",
+          "change": 4.896,
+          "price": 26.14
         }
       },
-      "age_seconds": 223
+      "age_seconds": 33
     },
     "patterns": {
       "patterns": [],
@@ -372,7 +304,7 @@
     },
     "quality_scores": {
       "BTC/USDT": {
-        "score": 0.7457,
+        "score": 0.7242,
         "grade": "C",
         "size_pct": 0.5,
         "passed": true,
@@ -380,33 +312,7 @@
         "breakdown": {
           "technical": 0.799,
           "ml_confidence": 0.5,
-          "order_flow": 0.902,
-          "volatility": 0.7
-        }
-      },
-      "ETH/USDT": {
-        "score": 0.6605,
-        "grade": "C",
-        "size_pct": 0.5,
-        "passed": true,
-        "reject_reason": "score 0.607 < threshold 0.65",
-        "breakdown": {
-          "technical": 0.799,
-          "ml_confidence": 0.5,
-          "order_flow": 0.461,
-          "volatility": 0.7
-        }
-      },
-      "SOL/USDT": {
-        "score": 0.6595,
-        "grade": "C",
-        "size_pct": 0.5,
-        "passed": true,
-        "reject_reason": "score 0.607 < threshold 0.65",
-        "breakdown": {
-          "technical": 0.799,
-          "ml_confidence": 0.5,
-          "order_flow": 0.459,
+          "order_flow": 0.891,
           "volatility": 0.7
         }
       }
@@ -424,125 +330,307 @@
       }
     },
     "portfolio": {
-      "open_positions": 0,
+      "open_positions": 1,
       "max_positions": 2,
-      "total_exposure_usd": 0,
-      "total_leverage": 0.0,
-      "current_drawdown": 1.23,
+      "total_exposure_usd": 499.5,
+      "total_leverage": 2.5,
+      "current_drawdown": 0.1,
       "max_drawdown_limit": 15.0,
       "is_halted": false,
       "halt_reason": "",
-      "positions": {}
+      "positions": {
+        "BTC/USDT": {
+          "side": "LONG",
+          "size_usd": 499.5,
+          "entry_price": 70099.1,
+          "opened_at": 1773331676.8411074
+        }
+      }
     },
     "edge_scores": {},
     "gate": {
-      "BTC/USDT": {
-        "is_exploitable": true,
-        "exploit_type": "MEAN_REVERTING",
-        "confidence": 0.503,
-        "tests": {
-          "hurst": 0.672,
-          "hurst_vote": "TRENDING",
-          "entropy": 0.8777,
-          "entropy_exploitable": true,
-          "autocorrelation": -0.1378,
-          "autocorr_vote": "MEAN_REVERTING",
-          "variance_ratio": 0.6196,
-          "vr_vote": "MEAN_REVERTING"
-        },
-        "agreement": 2,
-        "recommended": [
-          "mean_reversion",
-          "bollinger_reversal"
-        ],
-        "gate_pass_rate": 0.85
-      },
-      "ETH/USDT": {
-        "is_exploitable": true,
-        "exploit_type": "MEAN_REVERTING",
-        "confidence": 0.536,
-        "tests": {
-          "hurst": 0.6788,
-          "hurst_vote": "TRENDING",
-          "entropy": 0.7682,
-          "entropy_exploitable": true,
-          "autocorrelation": -0.2335,
-          "autocorr_vote": "MEAN_REVERTING",
-          "variance_ratio": 0.5866,
-          "vr_vote": "MEAN_REVERTING"
-        },
-        "agreement": 2,
-        "recommended": [
-          "mean_reversion",
-          "bollinger_reversal"
-        ],
-        "gate_pass_rate": 0.85
-      },
       "SOL/USDT": {
-        "is_exploitable": false,
-        "exploit_type": "NONE",
-        "confidence": 0.0,
+        "is_exploitable": true,
+        "exploit_type": "TRENDING",
+        "confidence": 0.329,
         "tests": {
-          "hurst": 0.7768,
+          "hurst": 0.7216,
           "hurst_vote": "TRENDING",
-          "entropy": 0.7743,
+          "entropy": 0.7609,
           "entropy_exploitable": true,
-          "autocorrelation": -0.0057,
-          "autocorr_vote": "NONE",
-          "variance_ratio": 1.0169,
+          "autocorrelation": -0.0812,
+          "autocorr_vote": "MEAN_REVERTING",
+          "variance_ratio": 0.8853,
           "vr_vote": "NONE"
         },
         "agreement": 1,
-        "recommended": [],
-        "gate_pass_rate": 0.85
+        "recommended": [
+          "trend",
+          "momentum",
+          "trend_continuation"
+        ],
+        "gate_pass_rate": 1.0
+      },
+      "ETH/USDT": {
+        "is_exploitable": true,
+        "exploit_type": "TRENDING",
+        "confidence": 0.326,
+        "tests": {
+          "hurst": 0.7492,
+          "hurst_vote": "TRENDING",
+          "entropy": 0.7671,
+          "entropy_exploitable": true,
+          "autocorrelation": -0.0951,
+          "autocorr_vote": "MEAN_REVERTING",
+          "variance_ratio": 0.8883,
+          "vr_vote": "NONE"
+        },
+        "agreement": 1,
+        "recommended": [
+          "trend",
+          "momentum",
+          "trend_continuation"
+        ],
+        "gate_pass_rate": 1.0
+      },
+      "BTC/USDT": {
+        "is_exploitable": true,
+        "exploit_type": "TRENDING",
+        "confidence": 0.312,
+        "tests": {
+          "hurst": 0.7219,
+          "hurst_vote": "TRENDING",
+          "entropy": 0.8026,
+          "entropy_exploitable": true,
+          "autocorrelation": -0.1492,
+          "autocorr_vote": "MEAN_REVERTING",
+          "variance_ratio": 0.8179,
+          "vr_vote": "MEAN_REVERTING"
+        },
+        "agreement": 2,
+        "recommended": [
+          "trend",
+          "momentum",
+          "trend_continuation"
+        ],
+        "gate_pass_rate": 1.0
       }
     },
     "graveyard": {
-      "tombstone_count": 1,
-      "total_losses_recorded": 1,
-      "total_loss_amount": -1.56,
+      "tombstone_count": 6,
+      "total_losses_recorded": 6,
+      "total_loss_amount": -22.73,
       "similarity_threshold": 0.75
     },
-    "strategy_votes": {},
+    "strategy_votes": {
+      "SOL/USDT": {
+        "decision": "hold",
+        "confidence": 0.0,
+        "votes": {
+          "trend": "hold",
+          "liquidity": "hold",
+          "orderbook": "hold",
+          "volatility": "hold",
+          "funding": "hold",
+          "imbalance_detector": "hold",
+          "liquidation_cascade": "hold",
+          "vol_breakout": "hold"
+        },
+        "raw_votes": {
+          "trend": {
+            "direction": "hold",
+            "confidence": 0.6
+          },
+          "liquidity": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "orderbook": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "volatility": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "funding": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "imbalance_detector": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "liquidation_cascade": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "vol_breakout": {
+            "direction": "hold",
+            "confidence": 0.0
+          }
+        },
+        "buy_count": 0,
+        "sell_count": 0,
+        "total": 8
+      },
+      "ETH/USDT": {
+        "decision": "hold",
+        "confidence": 0.125,
+        "votes": {
+          "trend": "hold",
+          "liquidity": "hold",
+          "orderbook": "hold",
+          "volatility": "hold",
+          "funding": "hold",
+          "imbalance_detector": "sell",
+          "liquidation_cascade": "hold",
+          "vol_breakout": "hold"
+        },
+        "raw_votes": {
+          "trend": {
+            "direction": "hold",
+            "confidence": 0.6
+          },
+          "liquidity": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "orderbook": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "volatility": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "funding": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "imbalance_detector": {
+            "direction": "sell",
+            "confidence": 0.95
+          },
+          "liquidation_cascade": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "vol_breakout": {
+            "direction": "hold",
+            "confidence": 0.0
+          }
+        },
+        "buy_count": 0,
+        "sell_count": 1,
+        "total": 8
+      },
+      "BTC/USDT": {
+        "decision": "hold",
+        "confidence": 0.125,
+        "votes": {
+          "trend": "hold",
+          "liquidity": "hold",
+          "orderbook": "hold",
+          "volatility": "hold",
+          "funding": "hold",
+          "imbalance_detector": "sell",
+          "liquidation_cascade": "hold",
+          "vol_breakout": "hold"
+        },
+        "raw_votes": {
+          "trend": {
+            "direction": "hold",
+            "confidence": 0.6
+          },
+          "liquidity": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "orderbook": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "volatility": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "funding": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "imbalance_detector": {
+            "direction": "sell",
+            "confidence": 0.861
+          },
+          "liquidation_cascade": {
+            "direction": "hold",
+            "confidence": 0.0
+          },
+          "vol_breakout": {
+            "direction": "hold",
+            "confidence": 0.0
+          }
+        },
+        "buy_count": 0,
+        "sell_count": 1,
+        "total": 8
+      }
+    },
     "funding": {}
   },
   "trader_state": {
-    "balance": 198.7197,
+    "balance": 199.8003,
     "leverage": 10,
-    "position": null,
-    "positions": {},
-    "unrealized_pnl": 0,
-    "equity": 198.7197,
-    "roi_pct": -0.64,
-    "trade_count": 3,
+    "position": "LONG",
+    "positions": {
+      "BTC/USDT": {
+        "side": "LONG",
+        "entry": 70116.62477500002,
+        "size_usd": 499.5,
+        "pnl": 0.0,
+        "tp": 70379.50000000003,
+        "sl": 69958.9,
+        "grade": "C"
+      }
+    },
+    "unrealized_pnl": 0.0,
+    "equity": 199.8003,
+    "roi_pct": -0.1,
+    "trade_count": 18,
     "win_rate": 66.7,
     "initial_balance": 200,
     "consecutive_losses": 0,
     "cooldown_remaining": 0,
-    "daily_pnl": -1.28,
+    "daily_pnl": -0.2,
     "daily_halted": false,
     "stats": {
-      "total_trades": 3,
-      "wins": 2,
-      "losses": 1,
+      "total_trades": 18,
+      "wins": 12,
+      "losses": 6,
       "win_rate": 66.7,
-      "profit_factor": 2.26,
-      "avg_win": 1.76,
-      "avg_loss": -1.56,
-      "max_drawdown": 0.77,
-      "total_pnl": 1.96,
-      "sharpe": 0.27,
-      "sortino": 0.27,
-      "calmar": 1.279,
-      "expectancy": 0.65,
-      "avg_hold_s": 531.0,
-      "best_trade": 3.24,
-      "worst_trade": -1.56,
+      "profit_factor": 0.99,
+      "avg_win": 1.88,
+      "avg_loss": -3.79,
+      "max_drawdown": 8.82,
+      "total_pnl": -0.2,
+      "sharpe": -0.003,
+      "sortino": -0.002,
+      "calmar": -0.011,
+      "expectancy": -0.01,
+      "avg_hold_s": 438.0,
+      "best_trade": 5.14,
+      "worst_trade": -11.24,
       "grade_breakdown": {
         "C": {
-          "count": 3,
-          "pnl": 1.9586999999999999,
-          "wins": 2
+          "count": 17,
+          "pnl": 0.9455999999999992,
+          "wins": 12
+        },
+        "B": {
+          "count": 1,
+          "pnl": -1.1453,
+          "wins": 0
         }
       }
     }

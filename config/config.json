@@ -7,18 +7,18 @@
   "circuit_breaker_losses": 3,
   "circuit_breaker_cooldown_cycles": 15,
   "interval_seconds": 30,
-  "daily_profit_target": 25.0,
-  "min_trade_grade": "C",
-  "allow_quiet_regime_c_trades": true,
-  "signal_quality_threshold": 0.5,
+  "daily_profit_target": 28.0,
+  "min_trade_grade": "D",
+  "allow_quiet_regime_c_trades": false,
+  "signal_quality_threshold": 0.6,
   "max_open_positions": 2,
-  "max_asset_exposure_pct": 0.95,
-  "max_total_leverage": 20,
+  "max_asset_exposure_pct": 0.25,
+  "max_total_leverage": 10,
   "max_drawdown_pct": 15,
   "max_daily_loss": 12,
-  "max_consecutive_losses": 5,
+  "max_consecutive_losses": 4,
   "max_trades_per_hour": 6,
-  "scalp_mode": true,
+  "scalp_mode": false,
   "active_symbols": [
     "BTC/USDT",
     "ETH/USDT",
@@ -26,5 +26,6 @@
     "BNB/USDT",
     "DOGE/USDT",
     "XRP/USDT"
-  ]
+  ],
+  "time_stop_candles": 8
 }

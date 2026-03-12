@@ -20,7 +20,7 @@ class FuturesPaperTrader:
         max_daily_loss_pct: float = 0.10,
         circuit_breaker_losses: int = 3,
         circuit_breaker_cooldown: int = 6,
-        time_stop_candles: int = 20,
+        time_stop_candles: int = 8,
         daily_profit_target: float | None = None,
     ):
         self.initial_balance = initial_balance

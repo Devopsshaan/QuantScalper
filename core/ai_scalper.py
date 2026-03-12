@@ -185,6 +185,10 @@ class MultiAssetScalper:
         from core.exploit_gate import ExploitGate
         from core.asymmetric_risk import AsymmetricRiskEngine
         from core.trade_graveyard import TradeGraveyard
+        from intelligence.strategy_voting_engine import StrategyVotingEngine
+        from strategies.orderbook_imbalance_detector import OrderbookImbalanceDetector
+        from strategies.liquidation_cascade import LiquidationCascadeDetector
+        from strategies.volatility_breakout import VolatilityBreakoutStrategy
 
         cfg = config or {}
         self.interval = interval_seconds
@@ -208,9 +212,15 @@ class MultiAssetScalper:
 
         # ═══ THE THREE INNOVATIONS ═══
         self.exploit_gate = ExploitGate()
-        self.asymmetric_risk = AsymmetricRiskEngine(min_rr=1.8, max_sl_pct=0.012)
-        self.graveyard = TradeGraveyard(similarity_threshold=0.75)
+        self.asymmetric_risk = AsymmetricRiskEngine(min_rr=1.2, max_sl_pct=0.012)
+        self.graveyard = TradeGraveyard(similarity_threshold=0.85)
         self.quant_edge = QuantEdgeEngine()
+        
+        # New Signals
+        self.voting_engine = StrategyVotingEngine()
+        self.ob_detector = OrderbookImbalanceDetector()
+        self.cascade_detector = LiquidationCascadeDetector()
+        self.breakout_detector = VolatilityBreakoutStrategy()
 
         # Standard subsystems
         self.signal_filter = SignalQualityFilter(threshold=cfg.get('signal_quality_threshold', 0.60))
@@ -348,8 +358,31 @@ class MultiAssetScalper:
                 self.all_indicators[sym]['hurst'] = gate['tests'].get('hurst', 0)
 
                 if not signal or signal not in ('LONG', 'SHORT'):
-                    continue
-
+                    # ═══ TASK 8: Let the Voting Engine decide via all signals ═══
+                    # Get legacy signals
+                    leg_sig = {'direction': 'buy' if signal=='LONG' else ('sell' if signal=='SHORT' else 'hold'), 'confidence': 0.60}
+                    
+                    # Fire new parallel detectors
+                    ob_res = self.ob_detector.detect(r['orderbook'])
+                    casc_res = self.cascade_detector.detect(df)
+                    break_res = self.breakout_detector.detect(df)
+                    
+                    # Compute Vote
+                    vote_tally = self.voting_engine.vote({
+                        'trend': leg_sig,
+                        'imbalance_detector': self.voting_engine.signal_from_dict(ob_res),
+                        'liquidation_cascade': self.voting_engine.signal_from_dict(casc_res),
+                        'vol_breakout': self.voting_engine.signal_from_dict(break_res)
+                    })
+                    
+                    self.all_strategy_votes[sym] = vote_tally
+                    
+                    if vote_tally['decision'] == 'hold':
+                        continue
+                        
+                    # Override base signal with committee vote
+                    signal = 'LONG' if vote_tally['decision'] == 'buy' else 'SHORT'
+                    
                 r['atr'] = engine.last_atr
                 r['signal'] = signal
 

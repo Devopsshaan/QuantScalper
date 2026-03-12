@@ -168,8 +168,16 @@ class TradeGraveyard:
         a = np.array(a, dtype=float)
         b = np.array(b, dtype=float)
         dist = np.sqrt(np.sum((a - b) ** 2))
-        # Normalize: max possible distance with 9 features all in [0,1] = sqrt(9) ≈ 3
-        similarity = 1.0 / (1.0 + dist)
+        max_dist = np.sqrt(len(a))  # max possible distance is sqrt(N) since features are [0,1]
+        
+        # Scale dist from [0, max_dist] to similarity [1, 0] linearly
+        # A perfectly identical state gets 1.0, extreme opposite gets 0.0
+        similarity = max(0.0, 1.0 - (dist / max_dist))
+        
+        # Add an exponent to penalize distant points even more and reward close ones
+        # This makes it harder to hit the 0.75 threshold by accident
+        similarity = similarity ** 2
+        
         return float(similarity)
 
     def _save(self):

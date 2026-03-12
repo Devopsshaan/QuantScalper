@@ -66,6 +66,9 @@ class StrategyVotingEngine:
         "orderbook",
         "volatility",
         "funding",
+        "imbalance_detector",
+        "liquidation_cascade",
+        "vol_breakout"
     ]
 
     def __init__(self):
@@ -107,11 +110,14 @@ class StrategyVotingEngine:
         buy_count   = sum(1 for d in votes.values() if d == BUY)
         sell_count  = sum(1 for d in votes.values() if d == SELL)
 
-        # ── 3. Determine dominant direction ──────────────────────────────
-        if buy_count > sell_count:
+        # ── 3. Determine dominant direction with Strict Consensus ──
+        # Fix: Need at LEAST 2 independent strategies to signal BUY or SELL
+        MIN_VOTES = 2
+        
+        if buy_count >= MIN_VOTES and buy_count > sell_count:
             decision   = BUY
             confidence = round(buy_count / total_votes, 4)
-        elif sell_count > buy_count:
+        elif sell_count >= MIN_VOTES and sell_count > buy_count:
             decision   = SELL
             confidence = round(sell_count / total_votes, 4)
         else:
@@ -234,3 +240,21 @@ class StrategyVotingEngine:
             direction = BUY if base_side in ("LONG", "buy") else SELL
             return {"direction": direction, "confidence": min(0.9, 0.5 + boost * 5)}
         return {"direction": HOLD, "confidence": 0.0}
+
+    @staticmethod
+    def signal_from_dict(strat_result: Dict) -> Dict:
+        """Generic adapter for modular bot strategies returning {'signal', 'confidence'}"""
+        if not isinstance(strat_result, dict):
+            return _DEFAULT_SIGNAL.copy()
+            
+        raw_sig = str(strat_result.get("signal") or "").upper()
+        conf = float(strat_result.get("confidence", 0.0))
+        
+        if raw_sig == "LONG":
+            direction = BUY
+        elif raw_sig == "SHORT":
+            direction = SELL
+        else:
+            direction = HOLD
+            
+        return {"direction": direction, "confidence": conf}

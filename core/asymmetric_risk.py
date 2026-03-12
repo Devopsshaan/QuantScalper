@@ -45,7 +45,7 @@ class AsymmetricRiskEngine:
     Ensures every trade has positive expected value.
     """
 
-    def __init__(self, min_rr: float = 1.8, max_sl_pct: float = 0.012):
+    def __init__(self, min_rr: float = 1.2, max_sl_pct: float = 0.012):
         self.min_rr = min_rr          # minimum acceptable R:R
         self.max_sl_pct = max_sl_pct  # max SL as % of entry (1.2%)
 
@@ -66,7 +66,7 @@ class AsymmetricRiskEngine:
         """
         # Step 1: Compute noise-based minimum SL
         # SL must be > noise floor to avoid random stopouts
-        noise_floor = atr * 1.0  # 1.0 ATR = typical 1-min noise range
+        noise_floor = atr * 0.8  # 0.8 ATR = tighter noise range
 
         # Step 2: Find structural SL (beyond nearest swing point)
         structural_sl = noise_floor  # default
@@ -88,8 +88,8 @@ class AsymmetricRiskEngine:
         tp_dist = sl_dist * self.min_rr  # default: minimum R:R
         if df is not None and len(df) > 10:
             structural_tp = self._find_structural_tp(side, entry, df, atr)
-            if structural_tp > tp_dist:
-                tp_dist = structural_tp  # use market structure if it's better
+            if structural_tp > atr * 0.5:
+                tp_dist = structural_tp  # use market structure even if RR < min_rr!
 
         # Step 6: Compute expected value
         # EV = P(win) × TP_dist - P(loss) × SL_dist
