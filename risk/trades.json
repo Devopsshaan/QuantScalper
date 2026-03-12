@@ -117,5 +117,22 @@
     "candles_held": 4,
     "grade": "C",
     "regime": "TRENDING"
+  },
+  {
+    "timestamp": "2026-03-12T13:46:13.782377",
+    "symbol": "SOL/USDT",
+    "side": "LONG",
+    "entry": 87.3575,
+    "exit": 86.71,
+    "size_usd": 1516.29,
+    "pnl": -11.2383,
+    "balance_after": 199.8382,
+    "reason": "STOP_LOSS",
+    "partial_taken": false,
+    "partial_pnl": 0.0,
+    "hold_seconds": 477.0,
+    "candles_held": 14,
+    "grade": "C",
+    "regime": "RANGING"
   }
 ]

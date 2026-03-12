@@ -2426,3 +2426,11 @@
 2026-03-12 17:42:45 | qs.volatility | INFO  | Top 3 volatile: ETH/USDT(0.218%), DOGE/USDT(0.244%), SOL/USDT(0.210%)
 2026-03-12 17:43:18 | qs.volatility | INFO  | Top 3 volatile: ETH/USDT(0.218%), DOGE/USDT(0.244%), SOL/USDT(0.210%)
 2026-03-12 17:43:55 | qs.volatility | INFO  | Top 3 volatile: ETH/USDT(0.207%), DOGE/USDT(0.263%), SOL/USDT(0.210%)
+2026-03-12 17:44:29 | qs.volatility | INFO  | Top 3 volatile: ETH/USDT(0.207%), DOGE/USDT(0.263%), SOL/USDT(0.210%)
+2026-03-12 17:45:03 | qs.volatility | INFO  | Top 3 volatile: ETH/USDT(0.207%), DOGE/USDT(0.263%), SOL/USDT(0.210%)
+2026-03-12 17:45:36 | qs.volatility | INFO  | Top 3 volatile: ETH/USDT(0.207%), DOGE/USDT(0.263%), SOL/USDT(0.210%)
+2026-03-12 17:46:10 | qs.volatility | INFO  | Top 3 volatile: ETH/USDT(0.207%), DOGE/USDT(0.263%), SOL/USDT(0.210%)
+2026-03-12 17:46:13 | qs.risk      | WARNING | PORTFOLIO_HALT | {"drawdown": 0.1703025145087468, "peak": 225.1541137759987, "current": 186.80980204795765}
+2026-03-12 17:46:13 | qs.graveyard | INFO  | New tombstone buried | loss=$-11.24 | total=2
+2026-03-12 17:46:13 | qs.risk      | WARNING | MAX_DRAWDOWN | {"detail": "drawdown=15.17"}
+2026-03-12 17:46:13 | qs.system    | ERROR | Global risk guard triggered MAX_DRAWDOWN: drawdown=15.17
